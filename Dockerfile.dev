@@ -1,0 +1,4 @@
+FROM golang:1.22 as build
+WORKDIR /app
+COPY . .
+ENTRYPOINT ["go", "run", "main.go"]
